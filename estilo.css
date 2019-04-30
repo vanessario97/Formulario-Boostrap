@@ -1,0 +1,40 @@
+.borde{
+    background-color: gray;
+    height: 200px;
+}
+
+.borde1{
+    height: 400px;
+    text-align: center;
+    background-color: gainsboro; 
+}
+
+.borde2{
+    height: 400px;
+    text-align: center;
+    background-color: gainsboro;
+}
+
+.borde3{
+    height: 50px;
+    text-align: center;
+    background-color: orangered;
+}
+
+@import url('//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css');
+
+footer {
+	background-color: #1A1A1A;
+	height: 50%;
+    color: white;
+    padding: 10px;
+}
+
+.main1 { 
+  display:flex;
+  margin:0 auto;
+}
+
+a img:hover {
+    color: #fff;
+}

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>AEROCOLOMBIA</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="estilo.css">
+
+    </head>
+
+    <body>
+
+        <!-- ======================================== BARRA DE NAVEGACIÓN ========================================-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <a class="navbar-brand" href="#"><img src="imagenes/1.png" width="40" height="40" class="d-inline-block align-middle"> AEROCOLOMBIA</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"> Inicio <span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Ofertas de vuelos</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Tu reserva</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Idioma
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Español</a>
+                        <a class="dropdown-item" href="#">English</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Otro</a>
+                        </div>
+                    </li>
+                
+                
+                
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                <button type="button" class="btn btn-dark my-2 my-sm-0">Buscar</button>
+                </form>
+            </div>
+        </nav>
+
+        <!-- ============================================= CARRUSEL ============================================= -->
+        <div id="carousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="imagenes/promocion.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="imagenes/medellin.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="imagenes/cartagena.jpg" alt="Third slide">
+                </div> 
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="imagenes/santamarta.jpg" alt="Four slide">
+                </div> 
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="imagenes/reserva.jpg" alt="Five slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="imagenes/informacion.jpg" alt="Six slide">
+                </div>  
+            </div>
+
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">PrevioOs</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div><br>
+
+        <div class="container"> 
+            <div class="row">
+                <div class="col-6 borde1"> 
+                    <form method="POST">
+                        <table align="center"> <br>
+                                <tr> <td colspan="4" align="center"> <strong> <font face="Constantia" size="5">Información Personal </font> </strong>  </td> </tr>
+                                <tr>
+                                    <td colspan="2"><strong> Apellido(s):*</strong></td>
+                                    <td colspan="2"><strong> Nombres (s):*</strong></td>
+                                </tr>
+                    
+                                <tr>
+                                    <td colspan="2">
+                                        <input type="text" name="apellido" required placeholder="* Introduce apellido">
+                                    </td>
+                                    <td colspan="2">
+                                        <input type="text" name="nombre" required placeholder="* Introduce nombre">
+                                    </td>
+                                </tr>
+                    
+                                <tr>
+                                    <td colspan="2"><strong> Tipo Identificación</strong></td>
+                                    <td colspan="2"><strong> Número:*</strong></td>
+                                </tr>
+        
+                                <tr>
+                                    <td colspan="2">
+                                            <input type="text" name="paramLista" list="opciones">
+                                            <datalist id="opciones">
+                                            <option value="C.C">
+                                            <option value="T.I">
+                                            <option value="C.E">
+                                            </datalist>
+                                    </td>
+                                    <td colspan="2">
+                                        <input type="text" name="numero" required placeholder="* Numero">
+                                    </td>
+                                    
+                                </tr>
+
+                                <tr> <td colspan="4" align="center"><strong> Dirección correo electrónico:*</strong></td> </tr>
+                                <tr><td colspan="4"  align="center"><input type="text-left" name="correo" required placeholder="* Introduce correo electrónico"></td></tr>  
+
+                                
+                        </table>
+                        <br>
+                        <br>
+                        <input class="btn btn-primary" type="button" value="Buscar Vuelos">
+                    </form>
+                </div>
+
+                <div class="col-6 borde2"> 
+                    <div class="row">
+                        <div class="col-6 borde1"> 
+                            <form method="POST">
+                                <table align="center">
+
+                                    <tr> <td colspan="4" align="center"> <strong> <font face="Constantia" size="5">¿A dónde viajas? </font> </strong>  </td> </tr>
+                                    
+                                    <tr>
+                                        <td colspan="2"> <input type="text" name="desde" required placeholder="Desde"></td>
+                                        <td colspan="2"> <input type="text" name="hacia" required placeholder="Hacia"></td> 
+                                        
+                                    </tr><br>
+
+                                    <tr> <td colspan="4" align="center"> <strong> <font face="Constantia" size="5">¿Cuándo viajas? </font> </strong>  </td> </tr>
+                                        
+                                    <tr>
+                                        <td colspan="2"> Fecha de ida</td>
+                                        <td colspan="2"> Fecha de vuelta</td>
+                                            
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td colspan="2"> <input type="date" name="ida" ></td>
+                                        <td colspan="2"> <input type="date" name="vuelta"></td>
+                                        
+                                    </tr>
+                        
+                                    <tr> <td colspan="4" align="center"> <strong> <font face="Constantia" size="5">¿Cómo viajas? </font> </strong>  </td> </tr>
+                        
+                                    <tr>
+                                        <td colspan="2"> <input type="radio" name="clase" value="economica"/> Clase Económica </td>      
+                                        <td colspan="2"> <input type="radio" name="clase" value="ejecutiva"/> Clase Ejecutiva </td>  
+                                    </tr> 
+
+                                    
+                                </table>
+                                
+                            </form>
+
+                            <br>
+                            <input class="btn btn-primary" type="reset" value="Volver">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> 
+    </body> <br>
+
+    <footer>
+        <div class="container">
+        <div class="row">
+        <div class="col-12 col-6 text-left">
+            <h4 class="text-muted lead">¿Necesitas atención personalizada?</h4>
+            <h6 class="text-muted lead">Contáctanos</h6>
+            <h6 class="text-muted">
+            Venta telefónica (+57)01 8000 95 2323<br>
+            Horario de atención: 24 horas<br>
+            Únase a nuestra comunidad<br>
+            </h6>
+        </div>
+
+        <div class="col-xs-12 col-md-6 text-left">
+            <h6 class="text-muted lead">ENCUENTRANOS EN LAS REDES</h6>
+            <div class="redes-footer">
+              <a href="https://www.facebook.com/"><img src="imagenes/2.png"></a>
+              <a href="https://twitter.com/"><img src="imagenes/3.png"></a>
+              <a href="https://www.youtube.com/"><img src="imagenes/4.png"></a>
+              <a href="https://www.instagram.com./"><img src="imagenes/5.png"></a>
+            </div>
+        </div>
+        </div>
+
+        <div class="row"> 
+        <div class="col-md-12 text-right">
+            <p class="text-muted small">Vanessa Riobamba, @2019.<br> Todos los derechos reservados.</p>
+        </div>
+        
+        </div>
+
+        </div>
+        </div>  
+        </div>
+    </footer>
+</html>
